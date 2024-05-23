@@ -2,7 +2,7 @@
     background-color: var(--color-hero);
     padding-bottom: 13rem;
     position: relative;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 .hero .container {
@@ -12,13 +12,11 @@
 
 .hero_bg {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    inset: 0;
     width: 100%;
     height: 100%;
     mix-blend-mode: color-burn;
+    z-index: 3;
 }
 
 .hero_bg img {
@@ -160,4 +158,92 @@
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
     }
+}
+
+@media (max-width: 48em) {
+    .hero {
+        padding-bottom: 58.2rem;
+    }
+    
+    .hero_bg-city {
+        position: absolute;
+        bottom: 2rem;
+        width: 189rem;
+        height: 46rem;
+        z-index: 2;
+        left: calc(50% + -33rem);
+    }
+    
+    .hero_bg-round {
+        top: 75rem;
+        width: 70rem;
+        height: 70rem;
+        left: calc(50% - 37rem);
+    }
+    
+    .hero_bg-chess-1 {
+        top: 132rem;
+        width: 19rem;
+        left: calc(50% + 1rem);
+    }
+    
+    .hero_bg-chess-2 {
+        display: none;
+    }
+    
+    .hero_bg-chess-3 {
+        top: 108rem;
+        width: 12rem;
+        left: calc(50% + -19rem);
+    }
+    
+    .hero_bg-chess-4 {
+        top: 100rem;
+        width: 12rem;
+        left: calc(50% + 14rem);
+        transform: translateX(-50%) rotate(7deg);
+    }
+    
+    .hero_logo {
+        padding-top: 3.6rem;
+        margin-bottom: 8rem;
+        gap: 1.1rem;
+    }
+    
+    .hero_logo__img {
+        width: 15.9rem;
+        height: 5.4rem;
+    }
+    
+    .hero_logo__text {
+        font-size: 2.884rem;
+        width: 25.6rem;
+    }
+    
+    .hero_title {
+        width: 100%;
+        margin-bottom: 4.8rem;
+    }
+    
+    .hero_title span:nth-child(2) {
+        margin-left: 12.65rem;
+        width: 43.2rem;
+    }
+    
+    .hero_title span:nth-child(3) {
+        margin-left: 6.3rem;
+        white-space: nowrap;
+    }
+    
+    .hero_desc {
+        font-size: 3.6rem;
+        margin-bottom: 6.4rem;
+        width: 100%;
+        text-align: left;
+    }
+    
+    .hero_btns {
+        flex-direction: column;
+        gap: 2.8rem;
+    } 
 }

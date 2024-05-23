@@ -8,7 +8,7 @@
     align-items: center;
     gap: 3rem;
     padding-left: 3rem;
-    -webkit-animation: ticker 15s linear infinite;
+    -webkit-animation: ticker 30s linear infinite;
 	animation: ticker 30s linear infinite;
 }
 
@@ -19,6 +19,7 @@
     text-transform: uppercase;
     white-space: nowrap;
     position: relative;
+    font-family: "Merriweather", serif;
 }
 
 .ticker span::after{
@@ -57,4 +58,22 @@
 		-webkit-transform: translate3d(-100%, 0, 0);
 		transform: translate3d(-100%, 0, 0);
 	}
+}
+
+@media (max-width: 48em) {
+    .ticker_list{
+        padding: 2rem 0;
+        gap: 6rem;
+        padding-left: 6rem;
+    }
+    
+    .ticker span{
+        font-size: 3.2rem;
+    }
+    
+    .ticker span::after{
+        right: calc(100% + 2.4rem);
+        width: 1.2rem;
+        height: 1.2rem;
+    }
 }

@@ -9,6 +9,7 @@
     align-items: center;
     gap: 6.4rem;
 }
+
 .events_top__title {
     width: 76.4rem;
     text-wrap: balance;
@@ -33,6 +34,7 @@
     background-size: cover;
     mix-blend-mode: color-burn;
 }
+
 .events_info {
     display: grid;
     grid-template-columns: 47.4rem 1fr;
@@ -227,3 +229,166 @@
         transform: scale(1) rotate(-89.12deg);
     }
 }
+
+@media (max-width: 48em) {
+    .events {
+        margin-bottom: 24rem;
+        margin-top: 9.6rem;
+    }
+    .events_top {
+        margin-bottom: 4.88rem;
+        flex-direction: column;
+        gap: 4.8rem;
+        position: relative;
+    }
+    .events_top__title {
+        width: 100%;
+        text-wrap: pretty;
+    }
+    .events_top__title p:first-of-type{
+        display: block;
+        margin-bottom: 52.2rem;
+    }
+    .events_top__img {
+        position: absolute;
+        top: 35.2rem;
+        width: 100%;
+        height: 42.4rem;
+    }
+    .events_info {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: unset;
+    }
+    .events_info__img {
+        grid-area: auto;
+        position: relative;
+        height: 80.4rem;
+        margin-bottom: 6.8rem;
+    }
+    .events_info__img-bg {
+        top: 13.4rem;
+        left: 0.5rem;
+        width: 61.8rem;
+        height: 57.2rem;
+        transform: rotate(270deg);
+    }
+    .events_info__img-money {
+        top: 9.2rem;
+        width: 17rem;
+        height: 34rem;
+    }
+    .events_info__img-blow {
+        top: 1rem;
+        left: unset;
+        right: -3.4rem;
+        height: 49.4rem;
+        width: 74.6rem;
+    }
+    .events_info__img-player {
+        top: 18.38rem;
+        right: unset;
+        left: 10.6rem;
+        height: 48rem;
+        width: 47.8rem;
+    }
+    .events_info__img-blow-sm {
+        bottom: 0.318rem;
+        left: -0.56rem;
+        height: 34.51rem;
+        width: 31.36rem;
+        z-index: 5;
+        transform: rotate(-89.12deg);
+    }
+    .events_info__img-chess {
+        bottom: 2rem;
+        left: 13.338rem;
+        height: 20.9rem;
+        width: 12.764rem;
+        transform: rotate(145.05deg);
+    }
+    .events_info__img-hand {
+        bottom: -8.8rem;
+        right: 7.7rem;
+        height: 32.49rem;
+        width: 24.432rem;
+    }
+    .events_info__title {
+        margin-bottom: 8.8rem;
+    }
+    .events_table {
+        gap: 3.2rem;
+        margin-bottom: 8rem;
+    }
+    .events_table::before {
+        content: none;
+    }
+    .events_table__row {
+        padding-bottom: 3.2rem;
+        border-bottom: 0.4rem solid #d0d0d0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2.4rem;
+    }
+    .events_table__row span {
+        font-size: 4rem;
+    }
+    .events_table__row .category {
+        opacity: 0.7;
+    }
+    .events_info__link {
+        font-size: 3.6rem;
+    }
+}
+
+/* .go-up{
+    -webkit-animation: go-up 5s linear infinite both;
+    animation: go-up 5s linear infinite both;
+} */
+
+/* .rotate-45{
+    -webkit-animation: rotate-45 4s linear infinite both;
+    animation: rotate-45 4s linear infinite both;
+} */
+
+/* @-webkit-keyframes go-up {
+    0%, 100% {
+        -webkit-transform: translateY(0) rotate(145.05deg);
+        transform: translateY(0) rotate(145.05deg);
+    }
+    50% {
+        -webkit-transform: translateY(-20%) rotate()135deg;
+        transform: translateY(-20%) rotate(135deg);
+    }
+}
+@keyframes go-up {
+    0%, 100%{
+        -webkit-transform: translateY(0) rotate(145.05deg);
+        transform: translateY(0) rotate(145.05deg);
+    }
+    50% {
+        -webkit-transform: translateY(-20%) rotate(135deg);
+        transform: translateY(-20%) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes rotate-45 {
+    0%, 100% {
+        -webkit-transform: rotate(39.89deg);
+        transform: rotate(39.89deg);
+    }
+    50% {
+        -webkit-transform: rotate(50deg);
+        transform: rotate(50deg);
+    }
+}
+@keyframes rotate-45 {
+    0%, 100%{
+        -webkit-transform: rotate(39.89deg);
+        transform: rotate(39.89deg);
+    }
+    50% {
+        -webkit-transform: rotate(50deg);
+        transform: rotate(50deg);
+    }
+} */
