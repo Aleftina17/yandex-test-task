@@ -1,0 +1,10 @@
+.footer{
+    background-color: var(--color-hero);
+    padding: 4rem 0 7.2rem;
+}
+
+.footer span{
+    font-size: 1.6rem;
+    line-height: 120%;
+    opacity: 0.6;
+}
