@@ -206,7 +206,7 @@ input[type="number"] {
     line-height: 120%;
 }
 
-.btn_pag{
+.btn_pag {
     width: 4.4rem;
     height: 4.4rem;
     border-radius: 100%;
@@ -237,7 +237,7 @@ input[type="number"] {
     height: 2rem;
 }
 
-.mobile{
+.mobile {
     display: none;
 }
 
@@ -294,17 +294,23 @@ input[type="number"] {
         font-size: 3.2rem;
     }
 
-    .btn_pag{
+    .btn_pag {
         width: 7.2rem;
         height: 7.2rem;
     }
 
-    .btn_pag svg{
+    .btn_pag svg {
         width: 2rem;
         height: 3.6rem;
     }
 
-    .mobile{
+    .btn_more {
+        padding: 2.4rem;
+        font-size: 3.2rem;
+        height: 7rem;
+    }
+
+    .mobile {
         display: block;
     }
 }
