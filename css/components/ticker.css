@@ -36,31 +36,35 @@
 
 @-webkit-keyframes ticker {
     0% {
-        -webkit-transform: translateZ(0);
-        transform: translateZ(0);
-        visibility: visible;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        
     }
 
     to {
-        -webkit-transform: translate3d(-100%, 0, 0);
-        transform: translate3d(-100%, 0, 0);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
     }
 }
 
 @keyframes ticker {
     0% {
-        -webkit-transform: translateZ(0);
-        transform: translateZ(0);
-        visibility: visible;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
     }
 
     to {
-        -webkit-transform: translate3d(-100%, 0, 0);
-        transform: translate3d(-100%, 0, 0);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
     }
 }
 
 @media (max-width: 48em) {
+    .ticker{
+        width: 100%;
+        overflow-x: hidden;
+    }
+
     .ticker_list {
         padding: 2rem 0;
         gap: 6rem;
