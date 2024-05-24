@@ -1,5 +1,6 @@
 .ticker {
     background-color: var(--color-accent);
+    overflow-x: hidden;
 }
 
 .ticker_list {
@@ -62,7 +63,6 @@
 @media (max-width: 48em) {
     .ticker{
         width: 100%;
-        overflow-x: hidden;
     }
 
     .ticker_list {
