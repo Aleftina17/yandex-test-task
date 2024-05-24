@@ -53,7 +53,6 @@ document.addEventListener("DOMContentLoaded", () => {
         showSlide(currentSlide);
         clearInterval(intervalId);
         intervalId = setInterval(nextSlide, 4000);
-        console.log(scrollWidth);
     }
 
     let intervalId = setInterval(nextSlide, 4000);

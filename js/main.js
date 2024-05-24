@@ -1,7 +1,7 @@
 import "./components/participants_swiper.js";
 import "./components/stages_swiper.js";
 
-if (window.innerWidth > 769) {
+if (window.innerWidth >= 769) {
     let circle = document.querySelector(".hero_bg-round");
     let city = document.querySelector(".hero_bg-city");
 
